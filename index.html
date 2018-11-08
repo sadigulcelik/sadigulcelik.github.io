@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>P,R,S - Client</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <h1>P, R, S</h1>
+  <div id="t">
+    <div id="r">
+      <div class="large" id="bar">
+        <button id="show_stats_button">Stats</button>
+        <div id="stats" class="hidden">
+          <h2>Stats</h2>
+          <p id="statistics">Statistics will appear after the first roudn of play.</p>
+        </div>
+        <br>
+        <br>
+        <button id="show_rules_button">Rules</button>
+        <div id="rules" class="hidden">
+          <h2>Rules</h2>
+          <p>The game of Rock Paper Scissors is based on predicting the opponent's move, and acting accordingly.</p>
+          <p>
+          Each player must:
+          <ul>
+            <li>Choose either rock, paper or scissors.</li>
+            <li>Submit their response.</li>
+            <li>Hope for victory.</li>
+          </ul>
+          <p/>
+          <p>
+          One wins when one picks
+          <ul>
+            <li>Rock when their opponent scissors</li>
+            <li>Scissors when their opponent picks paper</li>
+            <li>Paper when their opponent picks rock</li>
+          </ul>
+        </p>
+        <p>
+          One loses when one picks
+          <ul>
+            <li>Rock when their opponent paper</li>
+            <li>Paper when their opponent picks scissors</li>
+            <li>Scissors when their opponent picks rock</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+      <div class="large" id="main">
+        <div id="feedback" class="hidden">
+          <p id="feed"></p>
+        </div>
+        <div id="enter_name" class="hidden">
+          <h2>Enter your name, <span class=player_name_span>friend</span>: </h2><input type="text" id="name_textfield"><button id="name_button">Submit Name</button>
+        </div>
+        <div id="throw_choice" class="hidden">
+          Hey <span class=player_name_span>friend</span>, pick a weapon to use against the b(r)owser:
+          <select id="throw_choice_select">
+            <option value="null">Null</option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+          </select>
+          <button id="throw_choice_button">Use weapon</button>
+        </div>
+
+        <div id="game_results">
+          <p id=result class="hidden"></p>
+          <img id="player" src="images/player.JPG">&nbsp;&nbsp;&nbsp;<img id="bowser" src="images/bowser.png">
+        </div>
+        <center><button class="hidden" id="play_again_button">Play again</button></center>
+      </div>
+    </div>
+  </div>
+  <footer>
+
+    Sadi Gülçelik.
+    <br>
+    Last edited on Wednesday November 7th.
+    <script src="scripts.js"></script>
+  </footer>
+</body>
+
+</html>

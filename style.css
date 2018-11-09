@@ -7,11 +7,18 @@ footer{
 #game_results {
   width: 80%;
 }
-
+#icon{
+  width:60px;
+  padding:20px;
+  vertical-align: middle;
+  background-color: #d0e0ff;
+  border-style: inset;
+}
 h1 {
   color: #5500ee;
   background-color: #d0e0ff;
   text-align: center;
+
 }
 
 div {
@@ -22,12 +29,16 @@ div {
 p{
   text-align:left;
   padding:4%;
+  background-color: #f0f5ff;
 }
 li{
   text-align:left;
 }
-img, p {
+img{
   background-color: #f0f5ff;
+  border-width: medium;
+  border-style:solid;
+  color: #d0e0ff;
 }
 
 .large {

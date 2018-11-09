@@ -7,6 +7,9 @@ footer{
 #game_results {
   width: 80%;
 }
+#rules,#stats{
+  border-style: dotted;
+}
 #icon{
   width:60px;
   padding:20px;
@@ -47,13 +50,15 @@ img{
 }
 
 #main {
-  margin-left: 30%;
-  width: 65%;
+  border-style:ridge;
+  float: left;
+  width: 60%;
 }
 
 #bar {
-  margin-left:0%;
-  float: left;
+  border-style:ridge;
+  margin-left:75%;
+
   width: 20%;
 }
 

@@ -8,9 +8,33 @@
 </head>
 
 <body>
-  <h1><img id="icon" src="images/icon.png"> &nbsp;&nbsp;Rock, Paper, Scissors</h1>
+  <h1><img id="icon" src="images/icon.png"> &nbsp;&nbsp;Rock, Paper, Scissors says B(r)owser!</h1>
   <div id="t">
     <div id="r">
+      <div class="large" id="main">
+        <div id="feedback" class="hidden">
+          <p id="feed"></p>
+        </div>
+        <div id="enter_name" class="hidden">
+          <h2>Enter your name, <span class=player_name_span>friend</span>: </h2><input type="text" id="name_textfield"><button id="name_button">Submit Name</button>
+        </div>
+        <div id="throw_choice" class="hidden">
+          Hey <span class=player_name_span>friend</span>, pick a weapon to use against the b(r)owser:
+          <select id="throw_choice_select">
+            <option value="null">Null</option>
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+          </select>
+          <button id="throw_choice_button">Use weapon</button>
+        </div>
+
+        <div id="game_results">
+          <p id=result class="hidden"></p>
+          <img id="player" src="images/player.JPG">&nbsp;&nbsp;&nbsp;<img id="bowser" src="images/bowser.png">
+        </div>
+        <center><button class="hidden" id="play_again_button">Play again</button></center>
+      </div>
       <div class="large" id="bar">
         <button id="show_stats_button">Stats</button>
         <div id="stats" class="hidden">
@@ -46,33 +70,9 @@
             <li>Paper when their opponent picks scissors</li>
             <li>Scissors when their opponent picks rock</li>
           </ul>
-          In case disputes remain, here's <a href=http://worldrps.com/>the Official World PRS organization</a>
+          In case disputes remain, here's <a href=http://worldrps.com/>the Official World PRS organization</a>.
           </p>
         </div>
-      </div>
-      <div class="large" id="main">
-        <div id="feedback" class="hidden">
-          <p id="feed"></p>
-        </div>
-        <div id="enter_name" class="hidden">
-          <h2>Enter your name, <span class=player_name_span>friend</span>: </h2><input type="text" id="name_textfield"><button id="name_button">Submit Name</button>
-        </div>
-        <div id="throw_choice" class="hidden">
-          Hey <span class=player_name_span>friend</span>, pick a weapon to use against the b(r)owser:
-          <select id="throw_choice_select">
-            <option value="null">Null</option>
-            <option value="rock">Rock</option>
-            <option value="paper">Paper</option>
-            <option value="scissors">Scissors</option>
-          </select>
-          <button id="throw_choice_button">Use weapon</button>
-        </div>
-
-        <div id="game_results">
-          <p id=result class="hidden"></p>
-          <img id="player" src="images/player.JPG">&nbsp;&nbsp;&nbsp;<img id="bowser" src="images/bowser.png">
-        </div>
-        <center><button class="hidden" id="play_again_button">Play again</button></center>
       </div>
     </div>
   </div>
@@ -80,7 +80,7 @@
 
     Sadi Gülçelik.
     <br>
-    Last edited on Wednesday November 7th.
+    Last edited on Thursday November 8th.
     <script src="scripts.js"></script>
   </footer>
 </body>

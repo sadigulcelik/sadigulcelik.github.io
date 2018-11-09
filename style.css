@@ -1,6 +1,7 @@
 body {
   background-color: #f0f5ff;
   font-family: serif;
+  margin-top:0px;
 }
 footer{
   text-align:right;
@@ -24,7 +25,6 @@ h1 {
   text-align: center;
 
 }
-
 div {
   margin: 3%;
   padding: 3%;
@@ -74,6 +74,8 @@ img{
   padding: 3%;
 }
 #t{
+  margin-top:0px;
+  padding:5px;
   text-align:center;
   width: 90%; display: table;
 }
@@ -104,14 +106,9 @@ button {
     color: #000077;
 }
 button:hover {
-    border-width:medium;
     border-width:thick;
-    border-color: #5555EE;
-    border-style:solid;
-    margin: 4px 4px;
-    padding: 10px 10px;
-    display: inline-block;
-    background-color: #EE88F0;
-    font-weight:900;
-    color: #000077;
+}
+#logout{
+  background-color: #FF4444;
+  border-color: #55AAAA;
 }

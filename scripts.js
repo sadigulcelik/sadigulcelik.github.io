@@ -50,6 +50,13 @@ function makeToggable(button_element, div_element) {
     }
   });
 }
+document.getElementById("logout").addEventListener("click", function() {
+  localStorage.setItem('wins', '');
+  localStorage.setItem('losses', '');
+  localStorage.setItem('draws', '');
+  localStorage.setItem('player_name', '');
+  location.reload(true);
+});
 document.getElementById("play_again_button").addEventListener("click", function() {
   showOrNot(document.getElementById("play_again_button"), false);
   document.getElementById("bowser").src = "images/bowser.png"

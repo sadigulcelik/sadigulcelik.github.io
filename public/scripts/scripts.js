@@ -173,14 +173,14 @@ function stats(){
       if(n||n===0){return(n+"%")}
       else{return("You have not won or lost yet.")}}()+
     "<br><br>Your percentages:"+
-    "<br>Rock: " +playerData.throws.rock +
-    "<br>Paper: "+ playerData.throws.paper +
-    "<br>Scissors: " +playerData.throws.scissors+
+    "<br>Rock: " +Math.round(100*playerData.throws.rock/t)+"%" +
+    "<br>Paper: "+ Math.round(100*playerData.throws.paper/t)+"%"  +
+    "<br>Scissors: " +Math.round(100*playerData.throws.scissors/t)+"%" +
     
     "<br><br>B(r)owser's percentages:" + 
-    "<br>Rock: " +bowserData.throws.rock +
-    "<br>Paper: "+ bowserData.throws.paper +
-    "<br>Scissors: " +bowserData.throws.scissors;
+    "<br>Rock: " +Math.round(100*bowserData.throws.rock/t)+"%"  +
+    "<br>Paper: "+ Math.round(100*bowserData.throws.paper/t)+"%" +
+    "<br>Scissors: " +Math.round(100*bowserData.throws.scissors/t)+"%";
 }
 
 

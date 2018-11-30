@@ -1,0 +1,9 @@
+{
+    "name": "prsgulcelik",
+    "scripts": {
+        "start": "node file_server.js"
+    },
+    "dependencies": {
+        "express": "4.13.3"
+    }
+}

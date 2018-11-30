@@ -3,7 +3,7 @@ var fs = require('fs');
 
 var app = express();
 app.use(express.static('public'));
-var port = 3000;
+var port = process.env.PORT || 0000;
 app.listen(port, function(){
   console.log('Easy server listening for requests on port'+ port+'!');
 });

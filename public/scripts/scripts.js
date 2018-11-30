@@ -156,7 +156,9 @@ function stats(){
     var w = playerData.wld.wins;
     var l = playerData.wld.losses;
     var d = playerData.wld.draws;
-  t = w+l+d;
+    var t = w+l+d;
+    var bowserTotal = bowserData.wld.wins+bowserData.wld.losses+bowserData.wld.draws;
+    t = w+l+d;
         if(t>0){
   document.getElementById("statistics").innerHTML =
     "games played: " + t +
@@ -177,9 +179,9 @@ function stats(){
     "<br>Scissors: " +Math.round(100*playerData.throws.scissors/t)+"%" +
     
     "<br><br>B(r)owser's percentages:" + 
-    "<br>Rock: " +Math.round(100*bowserData.throws.rock/t)+"%"  +
-    "<br>Paper: "+ Math.round(100*bowserData.throws.paper/t)+"%" +
-    "<br>Scissors: " +Math.round(100*bowserData.throws.scissors/t)+"%";
+    "<br>Rock: " +Math.round(100*bowserData.throws.rock/bowserTotal)+"%"  +
+    "<br>Paper: "+ Math.round(100*bowserData.throws.paper/bowserTotal)+"%" +
+    "<br>Scissors: " +Math.round(100*bowserData.throws.scissors/bowserTotal)+"%";
     }
 }
 

@@ -153,7 +153,6 @@ function stats(){
     
     var bowserData=JSON.parse(localStorage.getItem("bowser"));
     var playerData=JSON.parse(localStorage.getItem(player_name));
-    else{
     var w = playerData.wld.wins;
     var l = playerData.wld.losses;
     var d = playerData.wld.draws;

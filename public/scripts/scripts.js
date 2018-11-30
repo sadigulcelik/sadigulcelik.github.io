@@ -153,13 +153,12 @@ function stats(){
     
     var bowserData=JSON.parse(localStorage.getItem("bowser"));
     var playerData=JSON.parse(localStorage.getItem(player_name));
-    if (!playerData){}
     else{
     var w = playerData.wld.wins;
     var l = playerData.wld.losses;
     var d = playerData.wld.draws;
   t = w+l+d;
-   
+        if(t>0){
   document.getElementById("statistics").innerHTML =
     "games played: " + t +
     "<br> wins: " + w +

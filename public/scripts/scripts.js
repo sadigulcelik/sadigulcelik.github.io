@@ -183,6 +183,14 @@ function stats(){
     "<br>Paper: "+ Math.round(100*bowserData.throws.paper/bowserTotal)+"%" +
     "<br>Scissors: " +Math.round(100*bowserData.throws.scissors/bowserTotal)+"%";
     }
+    else if(bowserTotal>0){
+        document.getElementById("statistics").innerHTML =
+    "You have not played yet. Here are the B(r)owser's throwing stats:"
+    "<br><br>B(r)owser's percentages:" + 
+    "<br>Rock: " +Math.round(100*bowserData.throws.rock/bowserTotal)+"%"  +
+    "<br>Paper: "+ Math.round(100*bowserData.throws.paper/bowserTotal)+"%" +
+    "<br>Scissors: " +Math.round(100*bowserData.throws.scissors/bowserTotal)+"%";
+    }
 }
 
 

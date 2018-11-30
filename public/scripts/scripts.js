@@ -150,10 +150,11 @@ function rules(){
     
 }
 function stats(){
-    console.log('abc');
-    console.log(player_name);
+    
     var bowserData=JSON.parse(localStorage.getItem("bowser"));
     var playerData=JSON.parse(localStorage.getItem(player_name));
+    if (!playerData){}
+    else{
     var w = playerData.wld.wins;
     var l = playerData.wld.losses;
     var d = playerData.wld.draws;
@@ -181,6 +182,7 @@ function stats(){
     "<br>Rock: " +Math.round(100*bowserData.throws.rock/t)+"%"  +
     "<br>Paper: "+ Math.round(100*bowserData.throws.paper/t)+"%" +
     "<br>Scissors: " +Math.round(100*bowserData.throws.scissors/t)+"%";
+    }
 }
 
 

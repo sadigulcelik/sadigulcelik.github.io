@@ -152,10 +152,11 @@ function rules(){
 function stats(){
     console.log('abc');
     console.log(player_name);
-    var dat=JSON.parse(localStorage.getItem(player_name));
-    var w = dat.wld.wins;
-    var l = dat.wld.losses;
-    var d = dat.wld.draws;
+    var bowserData=JSON.parse(localStorage.getItem("bowser"));
+    var playerData=JSON.parse(localStorage.getItem(player_name));
+    var w = playerData.wld.wins;
+    var l = playerData.wld.losses;
+    var d = playerData.wld.draws;
   t = w+l+d;
    
   document.getElementById("statistics").innerHTML =
@@ -172,14 +173,14 @@ function stats(){
       if(n||n===0){return(n+"%")}
       else{return("You have not won or lost yet.")}}()+
     "<br><br>Your percentages:"+
-    "<br>Rock: " +dat.throws.rock +
-    "<br>Paper: "+ dat.throws.paper +
-    "<br>Scissors: " +dat.throws.scissors;
+    "<br>Rock: " +playerData.throws.rock +
+    "<br>Paper: "+ playerData.throws.paper +
+    "<br>Scissors: " +playerData.throws.scissors+
     
-   /* "<br><br>B(r)owser's percentages:" +
-    "<br>Rock: " +
-    "<br>Paper: " +
-    "<br>Scissors: " +*/
+    "<br><br>B(r)owser's percentages:" + 
+    "<br>Rock: " +bowserData.throws.rock +
+    "<br>Paper: "+ bowserData.throws.paper +
+    "<br>Scissors: " +bowserData.throws.scissors;
 }
 
 

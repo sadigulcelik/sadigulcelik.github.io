@@ -29,5 +29,5 @@ table {
     border:solid;
 }
 tr:nth-child(odd) {
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }

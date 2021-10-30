@@ -1,0 +1,33 @@
+body{
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 20px;
+}
+p{
+    margin:20;
+}
+h1{
+    text-align:center;
+    color:#000080;
+    margin:0;
+    font-size:40;
+}
+h2{
+    text-align:center;
+    color:#000080;
+    margin:0;
+    font-size:25;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+table {
+    border:solid;
+}
+tr:nth-child(odd) {
+    background-color: lightblue;
+}
